@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   fotoPequena: {
-    width: 120,
-    height: 100,
+    width: 220,
+    height: 200,
   },
 });
