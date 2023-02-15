@@ -1,14 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
-
+import { StyleSheet, Text, View, Image } from "react-native";
+import Header from "./src/components/Header";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Header />
       <Text>Mr.</Text>
-      <Image source={require('./assets/MR.jpg')} />
+      <Image style={styles.fotoPequena} source={require("./assets/MR.jpg")} />
       <Text>Beast</Text>
-      <StatusBar style="auto" />
+      <Image
+        style={styles.fotoPequena}
+        source={require("./assets/Trollface.png")}
+      />
     </View>
   );
 }
@@ -16,8 +19,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FF06F4',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#FF06F4",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  fotoPequena: {
+    width: 120,
+    height: 100,
   },
 });
