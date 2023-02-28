@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 5,
     textAlign: "center",
+    marginBottom: 5,
   },
   fundoAbaixo: {
     backgroundColor: "white",
@@ -52,5 +53,6 @@ const styles = StyleSheet.create({
     width: 200,
     height: 30,
     padding: 5,
+    marginBottom: 5,
   },
 });
