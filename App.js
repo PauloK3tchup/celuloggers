@@ -1,28 +1,19 @@
-import { StyleSheet, Text, View, Image, FlatList } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import Header from "./src/components/Header";
+import Listagem from "./src/components/Listagem";
 
 export default function App() {
-  const tasks = [
-    "Gerar bobux",
-    "Usar bobux",
-    "Vender bobux",
-    "Sonegar bobux",
-    "Investir bobux",
-    "Subornar autoridades (com bobux)",
-  ];
   return (
     <View style={styles.container}>
       <Header />
       <Text>Mr.</Text>
       <Image style={styles.fotoPequena} source={require("./assets/MR.jpg")} />
       <Text>Beast</Text>
-      <View>
-        <FlatList data={tasks} renderItem={({ item }) => <Text>{item}</Text>} />
-        <Image
-          style={styles.fotoPequena}
-          source={require("./assets/Trollface.png")}
-        />
-      </View>
+      <Listagem />
+      <Image
+        style={styles.fotoPequena}
+        source={require("./assets/Trollface.png")}
+      />
     </View>
   );
 }
