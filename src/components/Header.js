@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
-export default function Header() {
+export default function Header(props) {
+  ///Destruct (Usar só o nome do props ex:{pog})
   return (
     <View style={styles.header}>
-      <Text style={styles.headerText}>Lista beastica</Text>
+      <Text style={styles.headerText}>{props.titulo}</Text>
+      <Text style={styles.subText}>{props.subtitulo}</Text>
     </View>
   );
 }
@@ -18,5 +20,9 @@ const styles = StyleSheet.create({
   headerText: {
     color: "white",
     fontSize: 35,
+  },
+  subText: {
+    color: "white",
+    fontSize: 15,
   },
 });

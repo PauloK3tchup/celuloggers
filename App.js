@@ -5,7 +5,7 @@ import Listagem from "./src/components/Listagem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header titulo="Lista beastica" subtitulo="Haha jonathan" />
       <Text>Mr.</Text>
       <Image style={styles.fotoPequena} source={require("./assets/MR.jpg")} />
       <Text>Beast</Text>

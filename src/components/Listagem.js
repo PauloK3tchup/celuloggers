@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View, FlatList } from "react-native";
+import ItemLista from "./ItemLista";
 export default function Listagem() {
   const foods = [
     { nome: "Pão", preço: "20 reais" },
@@ -20,11 +21,7 @@ export default function Listagem() {
       <Text style={styles.fundoTabela}>Item | Preço</Text>
       <FlatList
         data={foods}
-        renderItem={({ item }) => (
-          <Text style={styles.fundoAbaixo}>
-            {item.nome} | {item.preço}
-          </Text>
-        )}
+        renderItem={({ item }) => <ItemLista comida={item} />}
       />
     </View>
   );
@@ -43,16 +40,6 @@ const styles = StyleSheet.create({
     padding: 5,
     borderRadius: 5,
     textAlign: "center",
-    marginBottom: 5,
-  },
-  fundoAbaixo: {
-    backgroundColor: "white",
-    color: "blue",
-    borderRadius: 5,
-    textAlign: "center",
-    width: 200,
-    height: 30,
-    padding: 5,
     marginBottom: 5,
   },
 });
