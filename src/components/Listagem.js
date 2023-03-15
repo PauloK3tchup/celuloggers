@@ -14,6 +14,8 @@ export default function Listagem() {
     { nome: "Morbius 4K", preço: "-7 reais" },
     { nome: "Plutão", preço: "11 reais" },
     { nome: "Mauricio", preço: "NaN reais" },
+    { nome: "Cachorro", preço: "100 reais" },
+    
   ];
 
   return (
